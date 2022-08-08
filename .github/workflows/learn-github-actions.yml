@@ -1,7 +1,7 @@
 // PR_Test.yml
 // 완성된 코드
 name: PR Test
-on: [push]
+on: [pull_request]
 
 jobs: 
 	Run Jest:
@@ -33,4 +33,4 @@ jobs:
                   pull_number,
                   state: "closed"
                 })
-          if: failure()                  
+          if: failure()
